@@ -1,0 +1,9 @@
+# Bank of America / Merrill
+# Domain-only routing rules; policy is selected in the client configuration.
+# Scope and sources: https://github.com/E2ich0/proxy-rules#readme
+DOMAIN-SUFFIX,bankofamerica.com
+DOMAIN-SUFFIX,bofa.com
+DOMAIN-SUFFIX,bac.com
+DOMAIN-SUFFIX,baml.com
+DOMAIN-SUFFIX,ml.com
+DOMAIN-SUFFIX,merrilledge.com
