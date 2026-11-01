@@ -1,9 +1,0 @@
-# Bank of America / Merrill
-# Clash / Mihomo: behavior: classical, format: yaml
-payload:
-  - DOMAIN-SUFFIX,bankofamerica.com
-  - DOMAIN-SUFFIX,bofa.com
-  - DOMAIN-SUFFIX,bac.com
-  - DOMAIN-SUFFIX,baml.com
-  - DOMAIN-SUFFIX,ml.com
-  - DOMAIN-SUFFIX,merrilledge.com
