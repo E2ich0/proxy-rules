@@ -1,0 +1,22 @@
+# Finance: Bank of America / Merrill + PayPal
+# Policy-free Surge RULE-SET; not a global banking or payment allowlist.
+# Sources and limits: https://github.com/E2ich0/proxy-rules#readme
+
+# Bank of America / Merrill: core and static assets
+DOMAIN-SUFFIX,bankofamerica.com
+DOMAIN-SUFFIX,bofa.com
+DOMAIN-SUFFIX,bac.com
+DOMAIN-SUFFIX,baml.com
+DOMAIN-SUFFIX,ml.com
+DOMAIN-SUFFIX,merrilledge.com
+DOMAIN-SUFFIX,bac-assets.com
+
+# Exact third-party hosts: community BOA attribution, not official ownership
+DOMAIN,bankofamerica1.sc.omtrdc.net
+DOMAIN,awuseb.advanced-web-analytics.com
+DOMAIN,d2oexzqukiqsxx.cloudfront.net
+
+# PayPal: core service, static resources and PayPal.Me only
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,paypal.me
