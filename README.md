@@ -1,6 +1,6 @@
 # proxy-rules
 
-个人维护的 **Surge 金融分流规则**。范围仅限 **Bank of America（美国银行 / BofA）、Merrill / Merrill Edge（美林）和 PayPal**。不是所有金融网站的合集，也不是美国合众银行 U.S. Bank 的规则。只维护 Surge，不生成 Clash / Mihomo / MRS。
+个人维护的 **Surge 分流规则**：新增 [AI 核心合集说明](AI.md)，原金融范围仍仅限 **Bank of America（美国银行 / BofA）、Merrill / Merrill Edge（美林）和 PayPal**。不是所有金融网站的合集，也不是美国合众银行 U.S. Bank 的规则。只维护 Surge，不生成 Clash / Mihomo / MRS。
 
 仅发布不带策略名的域名规则及说明；不发布完整客户端配置、节点、订阅凭证、账户信息或 MITM 材料。
 
@@ -8,12 +8,13 @@
 
 | 文件 | 内容 | 原始地址 |
 | --- | --- | --- |
+| `Surge/AI.list` | ChatGPT / Codex、Claude、Gemini / AI Studio / Gemini CLI、NotebookLM / Gemini Notebook、Grok 核心域名；[用法、来源、许可与边界](AI.md) | [AI.list](https://raw.githubusercontent.com/E2ich0/proxy-rules/main/Surge/AI.list) |
 | `Surge/Finance.list` | 金融合集：BofA / 美林 10 条 + PayPal 3 条，共 13 条 | [Finance.list](https://raw.githubusercontent.com/E2ich0/proxy-rules/main/Surge/Finance.list) |
 | `Surge/BankOfAmerica.list` | BofA / 美林专用 10 条，保留原订阅路径，不夹入 PayPal | [BankOfAmerica.list](https://raw.githubusercontent.com/E2ich0/proxy-rules/main/Surge/BankOfAmerica.list) |
 
 Finance.list 中 BofA 部分与 BankOfAmerica.list 相同。两份为静态平铺的规则文件，不依赖嵌套规则集或构建器；更改 BofA 时须同步更新两份并验证集合一致。通常二选一，不必重复订阅。
 
-## Surge 用法
+## 金融规则的 Surge 用法
 
 将规则加入现有 `[Rule]`，放在可能提前匹配的广告/劫持名单、通用代理、直连规则及 `FINAL` 之前（保留必要的私有网络及节点直连例外在前）：
 
